@@ -156,8 +156,8 @@ footer {
 }
 
 .participants-list {
-  list-style: disc;
-  padding-left: 20px;
+  list-style: none;
+  padding-left: 0;
   margin: 0;
 }
 
@@ -166,6 +166,24 @@ footer {
   font-size: 14px;
   color: #333;
   border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-participant {
+  color: #dc3545;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 4px 8px;
+  font-size: 14px;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.delete-participant:hover {
+  opacity: 1;
 }
 
 .no-participants {
